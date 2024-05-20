@@ -147,7 +147,8 @@ div i{
         transform: translateX(0);
         opacity: 1;
         visibility: visible;
-        background-color:#FFC300 ;
+        background-color:#1b2d48;
+
         width: 100%;
 
 
@@ -294,7 +295,7 @@ div i{
         
     }
     .sec-text{
-        width: 92%;
+        width: 90%;
         display: flex;
        
         
