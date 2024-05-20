@@ -1,0 +1,340 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+root {
+    --primary_font: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+    --primary_bg: #0f172a;
+    --primary_bg_light: #1b2335;
+    --primary_light_icon: #252f45;
+    --dark_light: #c2bad2;
+    --icon_hover: #283a69;
+    --skills_gradient_bg: linear-gradient(261deg,#1f2739 5.73%,rgba(23,38,71,.98) 93.52%);
+    --skills_stroke: #0f172a;
+    --skills_text_color: #56b6d4;
+    --skills_gradient: linear-gradient(277deg,#2454fe 1.72%,#34cf8e 98.88%);
+    --black_border: #292929;
+    --green: #249a83;
+    --white: #fff;
+    --black: #000;
+    --hyperLink: #4c72f8;
+    --mouseEffects: radial-gradient(circle,rgba(10,0,147,.5) 0%,rgba(22,16,131,0) 70%);
+    --primary_darklight_text: #7778a4;
+    --Title-Gradient: linear-gradient(90deg,#239982 -1.88%,#6d64d3 104.56%);
+    --logo_gradient: linear-gradient(90deg,#39e168 -1.88%,#6d64d3 104.56%);
+}
+html{
+    font-size:62.5%;
+    /* 1rem=10px */
+    overflow-x: hidden;
+}
+body{
+    overflow-x:hidden ;
+    background: var(--skills_gradient_bg);   
+}
+.header{
+    padding: 0 4.8rem;
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#1b2d48;
+    width: 100%;
+
+}
+.header h1{
+    font-size: 30px;
+    text-decoration: overline underline;
+    
+    
+}
+.navbar-List{
+    display: flex;
+    gap: 4.8rem;
+    list-style: none;
+    font-weight: 700;
+}
+.navbar-List li a{
+    font-weight: bolder;
+    color: #FFC300;
+    font-size: 5rem;
+}
+.navbar-link:link,
+.navbar-link:visited{
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #212529;
+    transition: all 0.3sec;
+
+
+
+}
+.navbar-link:hover,
+.navbar-link:active{
+    color: #364fc7;
+}
+
+div i{
+    /* width: 4rem;
+    height: 4rem; */
+    color: #212529;
+    font-size: 20px;
+
+}
+.mobile-navbar-button{
+    display: none;
+    background: transparent;
+    cursor: pointer;
+
+
+}
+/* .mobile-navbar-button[name="close-btn"]{
+    display: none;
+} */
+.fa-xmark{
+    display: none;
+}
+
+/* responsivr codes */
+@media(max-width:62em){
+    .mobile-navbar-button{
+        display: block;
+        z-index: 999;
+        border: 3px;
+        font-size: 20px;
+
+    }
+    .header{
+        position: relative;
+    }
+
+    .header .logo{
+        width: 40%;
+    }
+
+    .navbar{
+        width: 100%;
+        height: 100vh;
+        background: #e7f5ff;
+        position: absolute;
+        top: 0;
+        left: 0;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        /* to get the tranisition */
+        transform: translateX(100%);
+        transition: all 0.5s linear;
+    
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none; 
+
+        
+    }
+    .navbar-List{
+        flex-direction: column;
+        align-items: center;
+    }
+    .active .navbar{
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        background-color:#FFC300 ;
+        width: 100%;
+
+
+        
+    }
+    .active .mobile-navbar-button .fa-bars{
+        display: none;
+        width: 0;
+        height: 0;
+    }
+    .active .mobile-navbar-button .fa-xmark{
+        display: block;
+        font-size: 30px;
+       
+
+    }
+    
+}
+
+/* hero section */
+.hero{
+    padding-top: 180px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+   
+}
+.heading{
+    font-size: 30px;
+    padding-left: 10px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    
+}
+.photo img{
+    
+    
+    padding-top: 100px;
+    border-radius: 100px;
+    border-top-right-radius: 200px;
+    border-top-left-radius: 200px;
+/*    
+    border-bottom-left-radius: 10000px;
+   
+   
+    border-bottom-right-radius: 10000px; */
+}
+.text{
+    width: 40%;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+.text h1{
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    
+}
+.sec-text{
+   font-size: 20px;
+    padding-top: 20px;
+    
+    padding-left: 50px;
+    display: flex;
+ 
+    justify-content: center;
+    font-weight: 400;
+    text-align: center;
+    background-color: #F0F8FF;
+    width: 80%;
+    border-radius: 20px;
+}
+.contact-btn{
+    width: 115px;
+    height: 40px;
+    background-color: #FFC300;
+    border-radius: 6px;
+    border: 1px solid #FFC300 ;
+    color: black;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+.contact-btn-div{
+    padding-top: 20px;
+    
+}
+.sec-text{
+    display: flex;
+    flex-direction: column;
+
+}
+.sec-text .icon{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+
+
+}
+.fa-brands{
+    font-size: 40px;
+    color: #FFC300;
+}
+.heading h2{
+    font-size: 25px;
+    font-weight: 700;
+}
+.plus{
+    color:#FFC300 ;
+}
+@media(max-width:62em){
+    .hero{
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        color: black;
+    }
+    .text{
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+       
+        
+    }
+    .text h1{
+        padding-left:40px ;
+        padding-top: 5px;
+        
+    }
+    .sec-text{
+        width: 92%;
+        display: flex;
+       
+        
+        align-items: flex-start;
+        font-size: 20px; 
+        margin-left: 20px;
+    }
+    .photo{
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 50px;
+        margin-right: 10px;
+        
+    }
+    .heading{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+
+        
+    }
+    .heading h2{
+        font-size: 30px;
+        padding-left: 40px;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+    .contact-btn-div{
+        padding-top: 40px;
+        padding-left: 55px;
+        display: flex;
+        justify-content: center;
+    }
+    .breaK{
+        background-color: white;
+    }
+    
+}
