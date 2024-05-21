@@ -301,6 +301,7 @@ div i{
 }
 @media(max-width:62em){
     .hero{
+        height: auto;
         padding-top: 30px;
         display: flex;
         flex-direction: column;
@@ -334,8 +335,9 @@ div i{
         margin-top: 40px;
         display: flex;
         justify-content: space-evenly;
-        padding-bottom: 50px;
+        padding-bottom: 20px;
         margin-right: 10px;
+        height: 300px;
         
     }
     .heading{
@@ -380,9 +382,18 @@ div i{
     
 }
 .about-sec-text{
-    width: 65%;
-    font-size: 23px;
-    height: auto;
+    font-size: 20px;
+    padding-top: 20px;
+    
+    padding-left: 50px;
+    display: flex;
+ 
+    justify-content: center;
+    font-weight: 400;
+    text-align: center;
+    background-color: #F0F8FF;
+    width: 80%;
+    border-radius: 20px;
 
 }
 .about-img{
@@ -444,16 +455,17 @@ div i{
 
 @media(max-width:62em){
     .about-sec{
+        padding-top: 0px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
     }
-    /* .about-sec-text p{
+    .about-sec-text p{
         margin-left: 10px;
         margin-top: 10px;
         margin-right: 10px;
-    } */
+    }
    
     .about{
         display: flex;
@@ -462,13 +474,13 @@ div i{
         align-items: center;
     }
     .about-sec-text{
-        width: 85%;
+        width: auto;
         height: auto;
-        margin-left: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+        margin-left: 20px;
+        margin-right: 20px;
+
     }
+   
     .about-sec{
         display: flex;
         flex-direction: column;
@@ -479,9 +491,14 @@ div i{
         display: none;
      }
      .about-sec-text .p1{
-        margin-left: auto;
+        padding-right: 50px;
         margin-top: 20px;
         margin-bottom: 20px;
+     }
+     .about-sec-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
      }
      .contact-link{
         display: flex;
@@ -494,11 +511,34 @@ div i{
 
      }
      .about-primary{
+        padding-top: 0px;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        margin-right: 48px;
+        margin-right: 10px;
 
      }
+     /* .about-sec-text{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+     } */
+     .about-box{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+     }
+     .about-img{
+            width: 100%;
+           display: flex;
+           justify-content: space-evenly;      
+           align-items: center; 
+           height: 400px;
+           margin-left: 200px;
+     }
+   
   
 }
