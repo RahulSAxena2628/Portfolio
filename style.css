@@ -429,6 +429,13 @@ div i{
 
 
 }
+@media (max-width:1139px){
+    .about-sec-text{
+        height: auto;
+        
+    }
+}
+
 .about-primary h1{
     font-weight: bolder;
     /* margin-left: 40px; */
