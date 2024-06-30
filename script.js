@@ -7,3 +7,13 @@ const Toggle=()=>{
 
 };
 x.addEventListener("click",()=>Toggle());
+
+
+// function scrollToNextSection() {
+//     const currentSection = document.activeElement.closest('section');
+//     const nextSection = currentSection.nextElementSibling;
+  
+//     if (nextSection) {
+//       nextSection.scrollIntoView();
+//     }
+//   }

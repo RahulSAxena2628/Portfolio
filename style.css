@@ -32,7 +32,7 @@ html{
 }
 body{
     overflow-x:hidden ;
-    background: var(--skills_gradient_bg);   
+    
 }
 .header{
     padding: 0 4.8rem;
@@ -550,3 +550,124 @@ div i{
 
 /* education */
 
+.eduh2{
+    font-size: 23px;
+    background: #FFC300;
+    color: black;
+    width: 10%;
+    margin-left: 50px;
+    height: auto;
+    margin-top: 100px;
+    border-radius: 7px ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.grid-container{
+    flex-basis: 100%;
+    display: grid;
+    gap: 100px;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: auto;
+    
+}
+.flexedu{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: solid 2px #b6d9f7;
+    background-color: #F0F8FF;
+    border-radius: 10px;
+    height: auto;
+    width: auto;
+    font-size: 20px;
+}
+.pofedu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 5px;
+    font-weight: 500;
+}
+.grid-container h2{
+    color: #FFC300;
+    font-size: 23px;
+    background: #FFC300;
+    color: black;
+    height: auto;
+    border-radius: 7px ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+    /* margin-left: 50px; */
+    
+}
+@media(max-width:62em){
+    .grid-container{
+        flex-basis: 100%;
+        display: grid;
+        gap: 100px;
+        grid-template-columns: repeat(1,1fr);
+        grid-auto-rows: auto;
+        
+    }
+    .grid-container h2{
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+    .eduh2{
+        width: 110px;
+    }
+
+}
+
+
+/*project*/
+.boxofpro{
+    transition: all 1s ease-in-out;
+}
+.boxofpro:hover{
+    background-color: #999;
+    background-position: center;
+    box-shadow: 0 0 4px #fff;
+    cursor: pointer;
+    
+}
+.project{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--primary_bg);
+    width: 80%;
+
+}
+.END{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top:100px;
+    background-color: #FFC300;
+    
+
+}
