@@ -671,3 +671,14 @@ div i{
     
 
 }
+@media (max-width:62em) {
+
+    .probox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        /* padding-left: 10px;
+        margin-left: 10px; */
+    }
+}
