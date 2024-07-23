@@ -716,11 +716,7 @@ div i{
     width: 450px;
     height: 250px;
 }
-.card img:hover{
-    width: 500px;
-    height: 300px;
-    transition-duration: 1s;
-}
+
 .card p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-left: 20px;
